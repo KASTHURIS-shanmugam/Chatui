@@ -2,64 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Social Chat UI</title>
+  <title>Chat UI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="chat.css">
 </head>
 <body>
 
-<div class="chat-app">
+<div class="chat-container">
 
   <!-- Sidebar -->
   <div class="sidebar">
-    <div class="sidebar-header">
-      <h2>Chats</h2>
+    <h2>Chats</h2>
+
+    <div class="user active">
+      <img src="https://i.pravatar.cc/50?img=1">
+      <div>
+        <h4>Alex</h4>
+        <p>Online</p>
+      </div>
     </div>
 
-    <div class="chat-list">
-      <div class="chat-user active">
-        <div>
-          <h4>Alex</h4>
-          <p>Hey, what's up?</p>
-        </div>
+    <div class="user">
+      <img src="https://i.pravatar.cc/50?img=2">
+      <div>
+        <h4>Emma</h4>
+        <p>Typing...</p>
       </div>
+    </div>
 
-      <div class="chat-user">
-        <div>
-          <h4>Emma</h4>
-          <p>Let's meet tomorrow</p>
-        </div>
-      </div>
-
-      <div class="chat-user">
-        <div>
-          <h4>John</h4>
-          <p>Send the files</p>
-        </div>
+    <div class="user">
+      <img src="https://i.pravatar.cc/50?img=3">
+      <div>
+        <h4>John</h4>
+        <p>Last seen 2h ago</p>
       </div>
     </div>
   </div>
 
   <!-- Chat Area -->
-  <div class="chat-area">
+  <div class="chat-box">
 
     <!-- Header -->
     <div class="chat-header">
+      <img src="https://i.pravatar.cc/40?img=1">
       <h3>Alex</h3>
     </div>
 
     <!-- Messages -->
-    <div class="messages">
-      <div class="message received">Hey 👋</div>
-      <div class="message sent">Hi Alex! How are you?</div>
-      <div class="message received">I'm good! What about you?</div>
-      <div class="message sent">Doing great 😄</div>
+    <div class="chat-messages">
+
+      <div class="msg received">Hey 👋</div>
+      <div class="msg sent">Hi Alex!</div>
+      <div class="msg received">How are you?</div>
+      <div class="msg sent">I'm doing great 😄</div>
+      <div class="msg received">Want to catch up later?</div>
+      <div class="msg sent">Sure! Let's do it 👍</div>
+
     </div>
 
     <!-- Input -->
     <div class="chat-input">
-      <input type="text" placeholder="Type a message...">
-      <button>Send</button>
+      <input type="text" placeholder="Type a message..." disabled>
+      <button disabled>Send</button>
     </div>
 
   </div>
